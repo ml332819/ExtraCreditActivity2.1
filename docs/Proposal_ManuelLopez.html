@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <meta charset="utf-8">
+    <title>Manuel López's Project Proposal</title>
+        <link rel="stylesheet" href="CSS_ProposalRules.css">
+    </head>
+    
+<body>
+    <h3>Cartography 2<br/> GEOG 5610<br/> Manuel E. López Sánchez <br/></h3>
+    
+        <h1>My Project Proposal</h1>
+
+    <p class = paragraph> The state of West Virginia is known for the timber industry that flourished in the early 1900s. It is estimated that a total of 85% of the virgin forest of the entire state was cut due to the industry boom at the time. This reality dramatically deforested the state, leaving most of its mountain region completely exposed to precipitation without tree canopies acting as natural buffers. As hydrological models assess flood risks and probabilities, recent studies have suggested climate change and land use change affect flood probabilities over time. Historic flood analyses have been conducted under the assumption of stationarity, which in the context of flood analysis, is definided as independent and equally distributed floods at a given location. The validity of this assumption has been questioned given the reality of climate change altering the precipitation extremes and river discharge rates. Similarly, land use change is known for causing severe hydrological effects which alter flood magnitudes and probabilities. This map is centered on showing how the dramatic deforestation that occured in West Virginia, especifically in the Greenbrier River watershed, changed land use for the area potentially impacting surface water behavior. This potential change in surface water behavior will be shown using hydrological tools available in ArcGIS Pro. </p>
+    
+    <ol>
+        <li><i class = heading>Describing the purpose of the map</i>:<br/> The created map will show the land use of the Greenbrier River (GR) Watershed in West Virginia. The intention of this map is to show the viewer how the land use area percentages are related to the runoff production according to simulations that will take place with Arc SWAT.  This map is intended to a broad audience which will require simple terms for any person to understand. It is my intention with this map to learn the key roughness coefficients that are necessary to cause flood in the outlet of the watershed. As part of it, I will create an interactive choice of runoff generation estimation values per county within the watershed, specifically close to the GR.</li>
+        
+        <br/>
+
+        <li><i class = heading>The structure of the map</i>:<br/>This map will include polygons that will show the <b>watershed area</b>, the political extent of the surrounding counties as well as the different land uses of the area. Similarly, this will require the identification of these counties and the different land use layers which will show <b> vegatation coverage</b> will be done by adding a legend. The thematic techniques will mostly be choropleth mapping as I will be showing <b>population</b> values per county. The supplementary data will be provided by adding a table that will show the same values as in the map but with extra data such as the normal roughness coefficients and the hypothetical ones needed to generate flood. </li>
+        
+        <br/>
+
+        <li><i class = heading>Data sources</i>:<br/>
+            The data for this map will come from the West Virginia Department of Transportation (WVDOT), the United States Geological Survey (USGS), and the West Virginia GIS Technical Center (WVGISTC). The WVDOT will provide the roughness coefficients for the various land uses as they have been calculated by them for drainage construction in the state. The USGS will provide the various Digital Elevation Models (DEMs) that were used to create the terrain of the GR watershed. The WVGISTC will provide the land use maps for the area which are from 2006.
+            The following table shows a summary of this information:</li> <br/>
+        
+        <div id="DataTable">    
+        <table>
+        <tr>
+            <th colspan = 2>Data Sources</th>
+        </tr>
+        <tr>
+           <th>Source</th>
+           <th>Type</th>
+        </tr>
+        <tr>
+            <td>West Virgina Department of Transportation</td>
+            <td>Roughness coefficients</td>
+        </tr>
+        <tr>
+            <td>United States Geological Survey</td>
+            <td>DEMs, Historic discharge </td>
+        </tr>
+         <tr>
+            <td>West Virginia GIS Technical Center</td>
+            <td>Land Use </td>
+        </tr>
+        </table>
+    
+        </div>
+        
+        <br/>
+        
+        
+        <li><i class = heading>Methodology</i>:<br/> After all data has been access and acquired from their respective sources, the following steps will be taken. First, a statistical analysis of hydrological data from the Greenbrier River will take place to search for evidence of a nonstationary time series. This will be done using R to facilitate a result. Secondly, a land use map will be created using ArcGIS Pro to calculate areas of different types of land uses and to illustrate the differences accordingly. Third, a Digital Elevation Model will be used to calculate hydrologic analysis using the Hydrology Tools available from GIS. After all of this is done, various hydrographs will be the output of the calculation of runoff and consequently discharge amount of the watershed outlet. </li>
+        
+    <br/>
+        
+        <li><i class = heading>Timeframe</i>:</li>
+        <br/>
+        
+    <div id = "TimelineTable">
+        <table>
+        
+    <tr>
+        <th>&nbsp;</th>
+        <th colspan = 3>Week 1</th>
+        <th colspan = 5>Week 2</th>
+        <th colspan = 5>Week 3</th>
+        <th colspan = 5>Week 4</th>
+        <th colspan = 5>Week 5</th>
+        <th colspan = 5>Week 6</th>
+        <th colspan = 5>Week 7</th>
+        <th colspan = 5>Week 8</th>
+        <th colspan = 1>W. 9</th>
+    </tr>
+    <tr>
+        <td>Task</td>
+        <td>Oct. 14</td>
+        <td>Oct. 15</td>
+        <td>Oct. 16</td>
+        <td>Oct. 19</td>
+        <td>Oct. 20</td>
+        <td>Oct. 21</td>
+        <td>Oct. 22</td>
+        <td>Oct. 23</td>
+        <td>Oct. 26</td>
+        <td>Oct. 27</td>
+        <td>Oct. 28</td>
+        <td>Oct. 29</td>
+        <td>Oct. 30</td>
+        <td>Nov. 2</td>
+        <td>Nov. 3</td>
+        <td>Nov. 4</td>
+        <td>Nov. 5</td>
+        <td>Nov. 6</td>
+        <td>Nov. 9</td>
+        <td>Nov. 10</td>
+        <td>Nov. 11</td>
+        <td>Nov. 12</td>
+        <td>Nov. 13</td>
+        <td>Nov. 16</td>
+        <td>Nov. 17</td>
+        <td>Nov. 18</td>
+        <td>Nov. 19</td>
+        <td>Nov. 20</td>
+        <td>Nov. 23</td>
+        <td>Nov. 24</td>
+        <td>Nov. 25</td>
+        <td>Nov. 26</td>
+        <td>Nov. 27</td>
+        <td>Nov. 30</td>
+        <td>Dec. 1</td>
+        <td>Dec. 2</td>
+        <td>Dec. 3</td>
+        <td>Dec. 4</td>
+        <td>Dec. 6</td>
+
+    </tr>
+        
+    <tr>
+        <td>Data Collection</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        
+    </tr>
+        
+    <tr>
+        <td>Data Processing</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>  
+    </tr>
+        
+    <tr>
+        <td>Interactivity Design</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+        
+    <tr>
+        <td>Map Production</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+        <td class = filled>&nbsp;</td>
+    </tr>
+    </table>
+    
+    </div>  
+        
+    </ol>
+    
+     
+</body>
+    
+</html>

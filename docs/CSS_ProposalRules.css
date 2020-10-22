@@ -1,0 +1,70 @@
+
+            h1{font-family: Helvetica;
+                text-align: center;
+                text-decoration: underline;
+                color: cornflowerblue
+            }
+
+            h2,h3{
+                font-family: Helvetica
+            }
+
+            .heading{
+                text-decoration: underline; 
+            }
+
+            .paragraph{
+                text-align: center
+    
+            }
+
+
+
+            table{
+                border: solid #000 3px;
+                border-collapse: collapse;
+            
+            }
+
+                #DataTable {
+                    width: auto;
+                    text-align: center;
+                
+                }
+                #DataTable th{
+                    border: solid #000 2px;
+                    text-align: center;
+                    background-color: darkgrey
+    
+                }
+                #DataTable td{
+                    border: solid #000 2px;
+                    text-align: left
+    
+                }
+            
+                
+            
+                #TimelineTable {
+                    width: auto;
+                    overflow: hidden;
+                    overflow-x: scroll;
+                    position: relative;
+                
+                }
+
+                #TimelineTable th{
+                    border: solid #000 2px
+    
+                }
+
+
+                #TimelineTable td{
+                    border: solid #000 1px;
+                    text-align: center
+                }
+
+            .filled{
+                background-color: darkgrey
+            }
+    
